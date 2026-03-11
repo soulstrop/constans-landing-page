@@ -19,9 +19,17 @@
         .container {
             text-align: center;
             background: #fff;
-            padding: 3rem 4rem;
+            padding: 2rem 3rem;
             border-radius: 10px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            width: min(560px, 90vw);
+            aspect-ratio: 3.5 / 2;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
         }
         h1 {
             font-size: 2.5rem;
@@ -37,6 +45,18 @@
             margin: 0 10px;
             font-size: 1.1rem;
         }
+        .customer-portal {
+            margin-top: 1.25rem;
+            text-align: center;
+        }
+        .customer-portal a {
+            text-decoration: none;
+            color: #007BFF;
+            font-size: 1rem;
+            border: 1px solid #007BFF;
+            padding: 0.4rem 1.2rem;
+            border-radius: 20px;
+        }
         .footer-links {
             position: fixed;
             bottom: 10px;
@@ -51,13 +71,18 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>J. Michael Constans</h1>
-        <p>Software Engineer | Open Source Contributor | Linux Enthusiast</p>
-        <div class="social-links">
-            <a href="https://github.com/soulstrop" target="_blank">GitHub</a>
-            <a href="https://linkedin.com/in/jmconstans" target="_blank">LinkedIn</a>
-            <a href="https://constans.dev/publickey.html" target="_blank">Public Key</a>
+    <div>
+        <div class="container">
+            <h1>J. Michael Constans</h1>
+            <p>Software Engineer | Open Source Contributor | Linux Enthusiast</p>
+            <div class="social-links">
+                <a href="https://github.com/soulstrop" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/jmconstans" target="_blank">LinkedIn</a>
+                <a href="https://constans.dev/publickey.html" target="_blank">Public Key</a>
+            </div>
+        </div>
+        <div class="customer-portal">
+            <a href="https://portal.constans.dev" target="_blank">Customer Portal</a>
         </div>
     </div>
 
